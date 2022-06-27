@@ -55,11 +55,15 @@ main{
 .topLeft{
     grid-area: topLeft;
     background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 2.5em 1fr;
 }
 
 .topLeftHeader{
     background-color: #ddd;
-    padding: .5em .5em .5em 1em;
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
 }
 
 .topLeftHeader > h3{
@@ -67,12 +71,28 @@ main{
 }
 
 .topLeftMain{
-    padding: .5em .5em .5em 1em;
-    padding-left: 1em;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-.topLeftMain > span:nth-child(1) > h1{
+.topLeftMain > div:nth-child(1){
+    
+} 
+
+
+.topLeftMain > div:nth-child(2){
+    
+} 
+ 
+.topLeftMain > div:nth-child(1) > h1{
     font-size: 4.5rem;
+    margin: 0;
+}
+
+.topLeftMain > div:nth-child(1) > p{
     margin: 0;
 }
 
@@ -83,7 +103,8 @@ main{
 
 .bottomLeft{
     grid-area: bottomLeft;
-    background-color: cyan;
+    opacity: .3;
+    background-color: red;
 }
 
 .bottomRight{
